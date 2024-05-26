@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../api/styles.css" />
+    <script src="../api/index.js"></script>
+    <title>API-TEMPO</title>
+</head>
+<body>
+    <div class="container">
+        <label></label>
+        <nav class="nav">
+            <ul class="menu">
+                <li><label id="dia">Dia:</label></li>
+                <li><label id="umidade">Umidade:</label></li>
+                <li><label id="cidade">Cidade:</label></li>
+                <li><label id="descricao">Descricao:</label></li>
+                <li><label id="temperatura">Temperatura:</label></li>
+            </ul>
+            <button class="button" onclick="getData()">MOSTRAR DADOS</button>
+        </nav>
+    </div>
+    <div class="dashboard">
+        <h3 style="margin-right: 50px;">Evolucão da temperatura</h3>
+    
+        <canvas id="chart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
